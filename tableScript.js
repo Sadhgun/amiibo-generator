@@ -7,11 +7,10 @@ const populateTable = () => {
         Object.keys(data.amiibos).forEach(function(key) {
   	        var ami = data.amiibos[key];
             var name = ami.name;
-            var keytext = key.padStart(16, '0');
             var keylink = key.substring(2).padStart(16, '0');
             var link = "https://github.com/Falco20019/libamiibo/raw/master/libamiibo.images/Images/icon_" + keylink + ".png"
-            var image = `<img src="${link}" height=46 width=46></img>`;
-            t.row.add([image, name, keytext]);
+            var image = `<img src="${link}" height=100 width=100></img>`;
+            t.row.add([image, name]);
         });
         t.draw(false);
     });

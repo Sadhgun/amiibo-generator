@@ -7,15 +7,13 @@
 body {
     background-color: #36393F;
     color: #FBF7F5;
+    padding: 0;
 }
 
 h1 {
+    margin-bottom: 1em;
     padding: 10px;
     text-align: center;
-}
-
-.hide {
-    display: none;
 }
 
 .inputBox {
@@ -30,6 +28,19 @@ h1 {
 
 .dataTables_filter {
     display: none; 
+}
+
+.amiibo-bar {
+    width: 70%;
+    margin: auto;
+}
+
+td {
+    display: table-cell;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
 }
 
 .custom-select,
@@ -77,4 +88,12 @@ h1 {
 .end-page {
     margin: 3rem;
     padding: 2rem;;
+}
+
+footer {
+    margin: 0;
+    padding: 1em;
+    background-color: #1F2021;
+    width: 100%;
+    text-align: end;
 }
