@@ -1,2 +1,2 @@
-# amiibo-generator
+# WumiiboDB
 Website for Wumiibo
