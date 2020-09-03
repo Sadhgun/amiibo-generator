@@ -9,6 +9,11 @@ body {
     color: #FBF7F5;
 }
 
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
 .inputBox {
     background-color: #1F2021;
     color: #FBF7F5;
