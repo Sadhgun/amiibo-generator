@@ -21,27 +21,12 @@
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous" type="text/javascript"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" crossorigin="anonymous" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.js" crossorigin="anonymous" type="text/javascript"></script>
-    <script src="script.js" type="text/javascript"></script>
+    <script src="table.js" type="text/javascript"></script>
+    <script src="other.js" type="text/javascript" defer></script>
 </head>
 <body>
     <h1>Amiibo Generator</h1>
     <div class="container-fluid">
-        <div class="row text-left">
-            <div class="col-sm-12">
-                <h2>FAQ:</h2>
-            </div>
-            <div class="col-sm-10">
-                <ul>
-                    <li><b>Q) </b>What is this?<br>
-                    <b>A) </b><i>This can be used to produce compatible bin figures to use with wumiibo</i></li>
-                    <li><b>Q) </b>How Do I Download?<br>
-                    <b>A) </b><i>Search for you amiibo and then click on the entry</i></li>
-                    <li><b>Q) </b>Is this legal?<br>
-                    <b>A) </b><i>This is 100% legal, as it uses no keys or encrypted bins. The main data that makes up a amiibo is an "ID" and this id can be shared</i></li>
-                    </br>
-                </ul>
-            </div>
-        </div>
         <div class="row mt-2">
             <div class="col-sm-12">
                 <div class="input-group">
@@ -82,13 +67,34 @@
               oTable.search(jQuery.fn.DataTable.ext.type.search.string($(this).val())).draw();  
         })</script>
     <div class="col-sm-10">
-            <br> <br>
-    <div class="col-sm-12">
-                        <h4>Credits:</h4>
-                    </div>
-                    <li>The images are from <a href = "https://github.com/Falco20019/libamiibo"> this</a> repo. Many thanks to Falco!</li>
-                    <li>This <a href = "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/database/amiibo.json"> json</a> file has been used to produce data on this page. Many Thanks to N3evin!</li>
-                    <li>Many thanks to DeltaV for helping me with the file generation code!</li></div>
+            <br><br>
+    
+    <div class="row text-left end-page">
+        <div class="col-sm-12">
+            <h2 id="faq">FAQ:</h2>
+        </div>
+        <div class="col-sm-10 hide" id="faq-list">
+            <ul>
+                <li><b>Q) </b>What is this?<br>
+                <b>A) </b><i>This can be used to produce compatible bin figures to use with wumiibo</i></li>
+                <li><b>Q) </b>How Do I Download?<br>
+                <b>A) </b><i>Search for you amiibo and then click on the entry</i></li>
+                <li><b>Q) </b>Is this legal?<br>
+                <b>A) </b><i>This is 100% legal, as it uses no keys or encrypted bins. The main data that makes up a amiibo is an "ID" and this id can be shared</i></li>
+            </ul>
+        </div>
+        <br><br><br><br>
+        <div class="col-sm-12">
+            <h2 id="credit">Credits:</h2>
+        </div>
+        <div class="col-sm-10 hide" id="credit-list">
+            <li>The images are from <a href = "https://github.com/Falco20019/libamiibo"> this</a> repo. Many thanks to Falco!</li>
+            <li>This <a href = "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/database/amiibo.json"> json</a> file has been used to produce data on this page. Many Thanks to N3evin!</li>
+            <li>Many thanks to DeltaV for helping me with the file generation code!</li>
+        </div>
+            
+    </div>
+
 </body>
 </html>
 </html>

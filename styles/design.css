@@ -14,6 +14,10 @@ h1 {
     text-align: center;
 }
 
+.hide {
+    display: none;
+}
+
 .inputBox {
     background-color: #1F2021;
     color: #FBF7F5;
@@ -68,4 +72,9 @@ h1 {
     color: #fff;
     background-color: #2b4764;
     border-color: #28415b;
+}
+
+.end-page {
+    margin: 3rem;
+    padding: 2rem;;
 }
